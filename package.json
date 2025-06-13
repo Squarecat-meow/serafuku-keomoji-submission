@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@prisma/client": "6.9.0",
     "@radix-ui/themes": "^3.2.1",
     "better-auth": "^1.2.9",
     "next": "15.3.3",
@@ -26,6 +27,7 @@
     "eslint": "^9",
     "eslint-config-next": "15.3.3",
     "eslint-plugin-react-hooks": "^5.2.0",
+    "prisma": "^6.9.0",
     "react-hooks": "^1.0.1",
     "tailwindcss": "^4",
     "typescript": "^5"
