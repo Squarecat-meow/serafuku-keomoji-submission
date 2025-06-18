@@ -1,6 +1,22 @@
 import type { NextConfig } from 'next';
 
 const nextConfig: NextConfig = {
+  images: {
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'serafuku.moe',
+        port: '',
+        pathname: '/proxy/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'media.serafuku.moe',
+        port: '',
+        pathname: '/local_content/**',
+      },
+    ],
+  },
   webpack: (config) => {
     const fileLoaderRule = config.module.rules.find((rule) =>
       rule.test?.test?.('.svg'),

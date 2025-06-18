@@ -8,7 +8,7 @@ export default function Home() {
   const handleClick = async () => {
     authClient.signIn.oauth2({
       providerId: 'misskey',
-      callbackURL: `/redirect`,
+      callbackURL: `/dashboard`,
     });
   };
 
